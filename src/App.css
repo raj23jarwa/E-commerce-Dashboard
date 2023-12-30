@@ -41,6 +41,18 @@
   border: 1px solid;
   cursor: pointer;
 }
+.loginbtn{
+  margin: 25px;
+  padding: 10px;
+  width: 150px;
+  background-color: #61dafb;
+  border: 1px solid;
+  cursor: pointer;
+}
+.login{
+  margin-left: 30%;
+  margin-top: 100px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

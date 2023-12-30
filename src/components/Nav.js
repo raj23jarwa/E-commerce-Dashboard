@@ -27,6 +27,10 @@ const Nav = () => {
                     {auth ? <Link to='/signup'>  Logout </Link> :
                     <Link to='/signup'>  Signup </Link>}
                 </li>
+                <li>
+                <Link to='/login'>  Login </Link>
+                </li>
+
             </ul>
         </div>
     )
