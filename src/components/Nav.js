@@ -23,13 +23,16 @@ const Nav = () => {
                 <li>
                     <Link to='/profile'>  Profile </Link>
                 </li>
-                <li onClick={logout}> 
-                    {auth ? <Link to='/signup'>  Logout </Link> :
-                    <Link to='/signup'>  Signup </Link>}
-                </li>
-                <li>
-                <Link to='/login'>  Login </Link>
-                </li>
+                    {
+                    auth ? <li><Link onClick={logout} to="/signup">Logout</Link></li>
+                    :<>
+                    
+
+                    <li><Link to='/signup'>  Signup </Link></li>
+               
+                   <li><Link to='/login'>  Login </Link></li>
+                </>
+                     }
 
             </ul>
         </div>
