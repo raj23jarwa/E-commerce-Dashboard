@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import Signup from './components/Signup';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from './components/Login';
+import AddProduct from './components/AddProduct';
 function App() {
   return (
     <div className="App">
@@ -13,7 +14,7 @@ function App() {
         <Routes>
           <Route element ={<PrivateComponent/>}>
           <Route path='/' element={<h1>Product Listing Component</h1>}> </Route>
-          <Route path='/add' element={<h1>Add Product Component</h1>}> </Route>
+          <Route path='/add' element={<AddProduct />}> </Route>
           <Route path='/update' element={<h1>Update Listing Component</h1>}> </Route>
           <Route path='/logout' element={<h1> Logout profile</h1>}> </Route>
           <Route path='/profile' element={<h1>Profile Component</h1>}> </Route>

@@ -3,11 +3,11 @@ import { useNavigate } from 'react-router-dom';
 const Login = () => {
     const [email, setEmail] = React.useState('');
     const [password, setPassword] = React.useState('');
-      const navigate=useNavigate();
-const auth = localStorage.getItem('user');
+    const navigate = useNavigate();
+    const auth = localStorage.getItem('user');
 
-    useEffect(()=>{
-        if(auth){
+    useEffect(() => {
+        if (auth) {
             navigate("/")
         }
     })
@@ -26,11 +26,11 @@ const auth = localStorage.getItem('user');
 
         result = await result.json();
         console.log(result);
-        if(result.name){
-            localStorage.setItem("user",JSON.stringify(result));
+        if (result.name) {
+            localStorage.setItem("user", JSON.stringify(result));
             navigate("/")
         }
-        else{
+        else {
             alert("please enter connect details")
         }
     };
@@ -61,4 +61,3 @@ const auth = localStorage.getItem('user');
 };
 
 export default Login;
- 
