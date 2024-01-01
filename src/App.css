@@ -1,4 +1,4 @@
-.navul{
+.navul {
   display: flex;
   justify-content: right;
   gap: 2%;
@@ -6,27 +6,32 @@
   margin: 0;
   background-color: #61dafb;
 }
-.navul li{
+
+.navul li {
   display: flex;
   padding: 10px;
   font-size: 1.3rem;
 }
-.navul li a{
+
+.navul li a {
   color: #fff;
   padding: 5px;
   text-decoration: none;
 }
-.footer{
+
+.footer {
   position: absolute;
   text-align: center;
   width: 100%;
   bottom: 0;
   background-color: #61dafb;
 }
-.maindiv{
+
+.maindiv {
   margin-left: 30%;
 }
-.inputBox{
+
+.inputBox {
   display: block;
   margin: 25px;
   padding: 7px;
@@ -34,7 +39,9 @@
   border: 1px solid #61dafb;
 }
 
-.loginbtn,.signupbtn,.addproductbtn{
+.loginbtn,
+.signupbtn,
+.addproductbtn {
   margin: 25px;
   padding: 10px;
   width: 150px;
@@ -42,20 +49,31 @@
   border: 1px solid;
   cursor: pointer;
 }
-.login{
+
+.login {
   margin-left: 30%;
   margin-top: 100px;
 }
-.logo{
+
+.logo {
   width: 63px;
-    border-radius: 50%;
-    float: left;
-    position: absolute;
+  border-radius: 50%;
+  float: left;
+  position: absolute;
 }
-.addproduct{
+
+.addproduct {
   margin-left: 30%;
   margin-top: 100px;
 }
+
+.invalid-input {
+  color: red;
+  margin-top: -20px;
+  display: block;
+  margin-left: 25px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -81,6 +99,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
