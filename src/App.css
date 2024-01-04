@@ -87,6 +87,14 @@
 .product-list ul{
   margin: 0;
 }
+.deletebtn{
+  color: #fff;
+  background-color: indianred;
+  padding: 2%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
