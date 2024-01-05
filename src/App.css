@@ -41,7 +41,8 @@
 
 .loginbtn,
 .signupbtn,
-.addproductbtn {
+.addproductbtn,
+.updateproductbtn {
   margin: 25px;
   padding: 10px;
   width: 150px;
